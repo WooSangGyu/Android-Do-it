@@ -49,5 +49,7 @@ public class CountingNumber extends AppCompatActivity {
     private void send() { //send 함수 설정
         String editmessage = ed.getText().toString();
         Toast.makeText(CountingNumber.this,editmessage,Toast.LENGTH_SHORT).show();
+
+
     }
 }
