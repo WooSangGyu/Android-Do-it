@@ -72,4 +72,13 @@ public class UpdownImage extends AppCompatActivity {
             IndexCode = 0;
         }
     }
+
+    public void next(View v){
+        nextActivity();
+    }
+
+    private void nextActivity(){
+        Intent intent = new Intent(UpdownImage.this, CountingNumber.class);
+        startActivity(intent);
+    }
 }
