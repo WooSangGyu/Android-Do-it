@@ -2,6 +2,7 @@ package com.example.androiddoit4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -47,5 +48,14 @@ public class MainActivity extends AppCompatActivity {
         imageView.setImageDrawable(bitmap);
         imageView.getLayoutParams().width = bitmapWidth;
         imageView.getLayoutParams().height = bitmapHeight;
+    }
+
+    public void  nextAc(View v){
+        nextActivity();
+    }
+
+    private void nextActivity(){
+        Intent intent = new Intent(MainActivity.this, UpdownImage.class);
+        startActivity(intent);
     }
 }

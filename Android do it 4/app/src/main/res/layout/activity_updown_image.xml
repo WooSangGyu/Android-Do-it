@@ -5,7 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".UpdownImage">
+
+    <HorizontalScrollView
+        android:id="@+id/HoScroll1"
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <ScrollView
+            android:id="@+id/Scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </ScrollView>
+    </HorizontalScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,41 +30,36 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/updown"
+            android:text="Up and Down"
+            android:onClick="updown"
+            android:layout_marginLeft="110dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Image change Button"
-            android:layout_gravity="center"
-            android:onClick="ch"
-            android:layout_marginLeft="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_height="wrap_content"/>
 
         <Button
-            android:id="@+id/next1"
+            android:id="@+id/next"
             android:text="Next Activity"
-            android:layout_marginLeft="20dp"
-            android:onClick="nextAc"
+            android:layout_marginLeft="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
 
     <HorizontalScrollView
-        android:id="@+id/HScroll"
+        android:id="@+id/HoScroll2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ScrollView
-            android:id="@+id/Scroll"
+            android:id="@+id/scroll2"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
-                android:id="@+id/picture"
+                android:id="@+id/image2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent"></ImageView>
         </ScrollView>
     </HorizontalScrollView>
 
