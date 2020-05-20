@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 public class Orientation2 extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
