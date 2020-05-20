@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Orientation3"
-            android:screenOrientation="landscape"
-            android:configChanges="orientation|screenSize|keyboardHidden">
+        <activity android:name=".ToastMessage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter></activity>
-        <activity android:name=".Orientation2"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Orientation3"/>
+        <activity android:name=".Orientation2" />
         <activity android:name=".Orientation" />
         <activity android:name=".EventListener" />
         <activity android:name=".DrawableActivity" />
