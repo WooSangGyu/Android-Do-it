@@ -46,4 +46,12 @@
         android:layout_height="wrap_content"
         android:text="color Toast"
         android:onClick="onButtonClick2"/>
+
+    <Button
+        android:id="@+id/SnackbarButton"
+        android:text="스낵바 띄우기"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SnackbarButton"/>
 </LinearLayout>
